@@ -1,0 +1,11 @@
+{
+  "name": "solidity-hashlock-escrow",
+  "title": "Hashlock token escrow",
+  "contract": "HashlockEscrow",
+  "description": "ERC20 hash-locked transfers with SHA-256 preimages, recipient-only redemption and expiry refunds.",
+  "args": [
+    "$TOKEN",
+    "$ADMIN"
+  ],
+  "assumptions": "Contract IDs are globally unique. Recipient must redeem before expiry; sender may refund at or after expiry. Secret is revealed publicly on redemption. Cross-chain safety, censorship and finality must be handled outside the contract."
+}
